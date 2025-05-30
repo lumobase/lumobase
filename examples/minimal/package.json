@@ -1,0 +1,12 @@
+{
+  "name": "lumoapps-example-bare",
+  "private": true,
+  "scripts": {
+    "build:lumo": "rm -rf dist && npm run wrangler-dry-build && cp lumobase.jsonc dist/ && cp -r public dist/public && npm run make-app",
+    "wrangler-dry-build": "wrangler deploy --dry-run --bundle --outdir dist",
+    "make-app": "cd dist && zip -r ./app.lumo . && mv ./app.lumo ../ && cd .. && rm -rf dist"
+  },
+  "devDependencies": {
+    "wrangler": "^4.14.4"
+  }
+}

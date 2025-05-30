@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "preserve",
+    "target": "es2022",
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*.ts"]
+}

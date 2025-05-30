@@ -1,0 +1,5 @@
+{
+  "name": "Minimal App",
+  "subtitle": "Minimal Lumobase example app",
+  "icon": "./public/icon.png",
+}

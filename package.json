@@ -1,0 +1,29 @@
+{
+  "name": "lumobase",
+  "version": "1.0.2",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://lumoapps.me",
+  "description": "Install cloud apps as easy as mobile apps",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm --no-git-tag-version version patch && npm run build"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^5.3.8",
+    "commander": "^12.1.0",
+    "open": "^10.1.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "lumobase": "dist/bin.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
