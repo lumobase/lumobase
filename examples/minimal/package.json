@@ -1,5 +1,5 @@
 {
-  "name": "lumoapps-example-bare",
+  "name": "lumobase-example-minimal",
   "private": true,
   "scripts": {
     "build:lumo": "rm -rf dist && npm run wrangler-dry-build && cp lumobase.jsonc dist/ && cp -r public dist/public && npm run make-app",
